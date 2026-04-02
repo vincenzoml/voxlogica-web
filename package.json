@@ -6,6 +6,9 @@
     "browser:login": "node scripts/github-pages-browser.mjs login",
     "browser:pages": "node scripts/github-pages-browser.mjs pages",
     "browser:godaddy": "node scripts/github-pages-browser.mjs godaddy",
+    "browser:login:chrome": "PLAYWRIGHT_CHROME_CHANNEL=chrome node scripts/github-pages-browser.mjs login",
+    "browser:pages:chrome": "PLAYWRIGHT_CHROME_CHANNEL=chrome node scripts/github-pages-browser.mjs pages",
+    "browser:godaddy:chrome": "PLAYWRIGHT_CHROME_CHANNEL=chrome node scripts/github-pages-browser.mjs godaddy",
     "postinstall": "playwright install chromium"
   },
   "devDependencies": {

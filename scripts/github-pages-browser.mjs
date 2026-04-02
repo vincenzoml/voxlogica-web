@@ -3,9 +3,12 @@
  *
  * First time: npm install (installs Chromium via postinstall)
  *
- *   npm run browser:login    → GitHub sign-in
- *   npm run browser:pages    → voxlogica-web → Settings → Pages
- *   npm run browser:godaddy  → GoDaddy DNS for voxlogica.org (may require login)
+ *   npm run browser:login         → GitHub sign-in (Playwright Chromium)
+ *   npm run browser:pages         → voxlogica-web → Settings → Pages
+ *   npm run browser:godaddy       → GoDaddy DNS (often blocked; prefer real Chrome)
+ *   npm run browser:*:chrome      → same URLs in your installed Google Chrome
+ *
+ * GoDaddy: easiest is normal Chrome — open the DNS URL yourself and log in there.
  *
  * Close the Chromium window when finished; the script exits when the browser disconnects.
  */
