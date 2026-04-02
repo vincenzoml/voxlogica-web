@@ -1,0 +1,14 @@
+{
+  "name": "voxlogica-site-tooling",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "browser:login": "node scripts/github-pages-browser.mjs login",
+    "browser:pages": "node scripts/github-pages-browser.mjs pages",
+    "browser:godaddy": "node scripts/github-pages-browser.mjs godaddy",
+    "postinstall": "playwright install chromium"
+  },
+  "devDependencies": {
+    "playwright": "^1.50.1"
+  }
+}
